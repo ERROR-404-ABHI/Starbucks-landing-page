@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks Coffee Company</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./output.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* background: #fff; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-button-next{
+        height: 80px;
+        width: 80px;
+        background-image: url(./image/swiperbtnright.cbc1d309941ecd98.svg);
+        background-size: cover;
+    }
+    .swiper-button-next::after{
+        content: "";
+    }
+    .swiper-button-prev{
+        height: 80px;
+        width: 80px;
+        background-image: url(./image/swiperbtnleft.22de7f3e8db5d523.svg);
+        background-size: cover;
+    }
+    .swiper-button-prev::after{
+        content: "";
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav class=" h-20 flex sticky top-0 bg-white">
+       
+        <div class=" flex ">
+
+            <ul class=" flex justify-center items-center gap-x-16  ml-20 p-0  ">
+                
+                <li><img class="h-9 w-9" src="./image/logo.png" alt=""></li>
+                <li class="hover:text-green-900 cursor-pointer">Home</li>
+                <li class="hover:text-green-900 cursor-pointer">Gift</li>
+                <li class="hover:text-green-900 cursor-pointer">Order</li>
+                <li class="hover:text-green-900 cursor-pointer">Pay</li>
+                <li class="hover:text-green-900 cursor-pointer">Store</li>
+
+            </ul>
+        </div>
+
+        <div class="flex grow justify-around items-center pr-12 ">
+            <img class="h-4 w-4 relative left-[145px] " src="./image/magnifying-glass-solid.svg" alt="">
+            <input  class="border-2 w-60 rounded-full h-9 text-xs pl-12 shadow-md" type="text" placeholder="Looking for something Specific?">
+            <img class="h-9 w-9   " src="./image/profile.png" alt="">
+
+        </div>
+        
+    </nav>
+
+    <div class="text-white border-2 h-20 bg-[#0E382C] flex justify-between items-center pl-32 pr-32 cursor-pointer" >
+        <p class="text-2xl">Starbucks</p>
+        <button class="border-2 rounded-full p-2 text-sm w-32 h-9 flex justify-center items-center" >Know More</button>
+    </div>
+
+    <div class=" h-72 flex justify-center items-center">
+        <div class=" h-3/4 w-[93%] rounded-md" >
+             <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class=" swiper-slide">
+                        <div class="h-[100%] w-[95%] bg-[#09907F] flex gap-x-4">
+                            <section class=" h-[100%] w-[10%] ml-4">
+                                <img src="./image/swiper_upper_Img1.png" alt="">
+                            </section>
+                            <section class=" text-white h-[100%] w-[80%] flex justify-around flex-col items-start gap-y-5">
+                                <p class="pt-3 text-sm">Starbucks</p>
+                                <p class="font-bold text-2xl">Beverage Subscription</p>
+                                <p class=" text-sm">Starbucks Subscription is Back! Sip Your Favourites for Less. Tap for Details. T&C Apply. </p>
+                                <p class="border-2 h-12 w-52 mb-3 flex justify-center items-center rounded-full text-black bg-white text-sm self-end">Know More </p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h-[100%] w-[95%] bg-[#005F3F] flex gap-x-4">
+                            <section class=" h-[100%] w-[10%] bg-contain bg-no-repeat " style="background-image: url(./image/swiper_upper_Img2.png);">
+                                <!-- <img class="border-2" src="./image/swiper_upper_Img2.png" alt=""> -->
+                            </section>
+                            <section class=" text-white h-[100%] w-[85%] flex justify-around flex-col items-start gap-y-2">
+                                <p class="pt-3 text-sm"> Now Brewing</p>
+                                <p class="font-bold text-2xl"> Starbucks Menu</p>
+                                <p class=" text-sm"> Indulge in season's feasting! Make your sips extra special. Explore Menu. </p>
+                                <div class="flex justify-between w-[99%]">
+                                    <section class="flex flex-col justify-start items-start">
+                                        <p class="text-[13px] ">Starting From</p>
+                                        <p class="text-[13px] font-bold ">Rs 250</p>
+                                    </section>
+                                    <p class=" bg-[#00754A] h-12 w-52 mb-3 flex justify-center items-center rounded-full text-white text-sm self-end">Order Now </p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-72 ">
+        <div class="ml-24 text-2xl font-bold">Handcrafted Curations</div>
+        <div class=" ml-24 mr-24 h-3/4 mt-3 flex justify-between items-center">
+
+            <div class="flex justify-start items-center flex-col  ">
+                <img class="h-28 w-28 rounded-full cursor-pointer hover:border-2 hover:border-green-600 " src="./image/Bestseller.jpg" alt="" >
+                <p class="font-bold">Bestseller</p>
+            </div>
+
+            <div class="flex justify-start items-center flex-col  ">
+                <img class="h-28 w-28 rounded-full cursor-pointer hover:border-2 hover:border-green-600" src="./image/Drinks.jpg" alt="">
+                <p class="font-bold">Drinks</p>
+            </div>
+
+            <div class="flex justify-start items-center flex-col">
+                <img class="h-28 w-28 rounded-full cursor-pointer hover:border-2 hover:border-green-600" src="./image/Food.jpg" alt="">
+                <p class="font-bold" >Food</p>
+            </div>
+
+            <div class="flex justify-start items-center flex-col  ">
+                <img class="h-28 w-28 rounded-full cursor-pointer hover:border-2 hover:border-green-600" src="./image/Merchandise.jpg" alt="">
+                <p class="font-bold" >Merchandise</p>
+            </div>
+
+            <div class="flex justify-start items-center flex-col  ">
+            <img class="h-28 w-28 rounded-full cursor-pointer hover:border-2 hover:border-green-600" src="./image/CoffeeAtHome.jpg" alt="">
+            <p class="font-bold" >Coffee At Home</p>
+            </div>
+
+            <div class="flex justify-start items-center flex-col  ">
+            <img class="h-28 w-28 rounded-full cursor-pointer hover:border-2 hover:border-green-600" src="./image/ReadyToEat.jpg" alt="">
+            <p class="font-bold" >Ready To Eat</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="h-72 bg-[#EDEBE9]">
+        <div class="  ml-24 mr-24 flex justify-between" >
+            <p class="mt-6 font-bold text-2xl text-[#1E3932]">Barista Recommends</p>
+            <p class="mt-4 text-green-800 font-bold text-sm">View Menu</p>
+        </div>
+
+
+
+        <div class="ml-20 mr-16  h-[80%] ">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper  ">
+
+                    <!--box 1  -->
+
+                    <div class="swiper-slide flex justify-center items-center  bg-[#EDEBE9] cursor-pointer">
+                        <div class="  h-[70%] w-[90%] rounded-md flex gap-x-3 bg-white border-2 border-gray-300 shadow-md">
+                            <div class="ml-4 mt-4 w-[30%]">
+                                <div class="rounded-md w-[100%] h-[60%] bg-center bg-cover p-5 bg-no-repeat" style="background-image: url(./image/swip_img_1.webp);"></div>
+                                <div class=" font-bold text-[13px] h-[40%]  flex items-center">₹283.50</div>
+                            </div>
+                            <div class=" w-[70%]">
+                                <div class=" h-[60%] flex flex-col justify-start items-start ">
+                                    <p class=" mt-4  h-6 w-6 bg-no-repeat" style="background-image: url(./image/veg.svg);"></p>
+                                    <p class="font-bold text-sm">Cappuccino </p>
+                                    <p class="text-[8px] text-gray-800"> SHORT()</p>
+                                </div>
+                                <div class="h-[40%] mr-4 flex justify-end items-center">
+                                    <div class="font-bold text-sm bg-[#427a6b] h-6 flex justify-center items-center w-fit p-4 rounded-full text-white  hover:bg-[#204138]" >Add item</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--box 2  -->
+                
+                    <div class="swiper-slide flex justify-center items-center  bg-[#EDEBE9] cursor-pointer">
+                        <div class="  h-[70%] w-[90%] rounded-md flex gap-x-3 bg-white border-2 border-gray-300 shadow-md">
+                            <div class="ml-4 mt-4 w-[30%]">
+                                <div class="rounded-md w-[100%] h-[60%] bg-center bg-cover p-5 bg-no-repeat" style="background-image: url(./image/swip_img_2.webp);"></div>
+                                <div class=" font-bold text-[13px] h-[40%]  flex items-center">₹309.75</div>
+                            </div>
+                            <div class=" w-[70%]">
+                                <div class=" h-[60%] flex flex-col justify-start items-start ">
+                                    <p class=" mt-4  h-6 w-6 bg-no-repeat" style="background-image: url(./image/veg.svg);"></p>
+                                    <p class="font-bold text-sm">Signature Hot Chocolate </p>
+                                    <p class="text-[8px] text-gray-800">SHORT(237 mL) 284 kcal </p>
+                                </div>
+                                <div class="h-[40%] mr-4 flex justify-end items-center">
+                                    <div class="font-bold text-sm bg-[#427a6b] h-6 flex justify-center items-center w-fit p-4 rounded-full text-white  hover:bg-[#204138]" >Add item</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--box 3  -->
+
+                    <div class="swiper-slide flex justify-center items-center  bg-[#EDEBE9] cursor-pointer">
+                        <div class="  h-[70%] w-[90%] rounded-md flex gap-x-3 bg-white border-2 border-gray-300 shadow-md">
+                            <div class="ml-4 mt-4 w-[30%]">
+                                <div class="rounded-md w-[100%] h-[60%] bg-center bg-cover p-5 bg-no-repeat" style="background-image: url(./image/swip_img_3.webp);"></div>
+                                <div class=" font-bold text-[13px] h-[40%]  flex items-center">₹378.00</div>
+                            </div>
+                            <div class=" w-[70%]">
+                                <div class=" h-[60%] flex flex-col justify-start items-start ">
+                                    <p class=" mt-4  h-6 w-6 bg-no-repeat" style="background-image: url(./image/veg.svg);"></p>
+                                    <p class="font-bold text-sm">Vanilla Milkshake</p>
+                                    <p class="text-[8px] text-gray-800">TALL(354 mL).PER SERVE (354ml)- 531 Kcal </p>
+                                </div>
+                                <div class="h-[40%] mr-4 flex justify-end items-center">
+                                    <div class="font-bold text-sm bg-[#427a6b] h-6 flex justify-center items-center w-fit p-4 rounded-full text-white  hover:bg-[#204138]" >Add item</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--box 4  -->
+
+                    <div class="swiper-slide flex justify-center items-center  bg-[#EDEBE9] cursor-pointer">
+                        <div class="  h-[70%] w-[90%] rounded-md flex gap-x-3 bg-white border-2 border-gray-300 shadow-md">
+                            <div class="ml-4 mt-4 w-[30%]">
+                                <div class="rounded-md w-[100%] h-[60%] bg-center bg-cover p-5 bg-no-repeat" style="background-image: url(./image/swip_img_4.webp);"></div>
+                                <div class=" font-bold text-[13px] h-[40%]  flex items-center">₹299.25</div>
+                            </div>
+                            <div class=" w-[70%]">
+                                <div class=" h-[60%] flex flex-col justify-start items-start ">
+                                    <p class=" mt-4  h-6 w-6 bg-no-repeat" style="background-image: url(./image/veg.svg);"></p>
+                                    <p class="font-bold text-sm">Cold Brew Black </p>
+                                    <p class="text-[8px] text-gray-800"> SHORT(Short Cold Brew Black) </p>
+                                </div>
+                                <div class="h-[40%] mr-4 flex justify-end items-center">
+                                    <div class="font-bold text-sm bg-[#427a6b] h-6 flex justify-center items-center w-fit p-4 rounded-full text-white  hover:bg-[#204138]" >Add item</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--box 5  -->
+                
+                    <div class="swiper-slide flex justify-center items-center  bg-[#EDEBE9] cursor-pointer">
+                        <div class="  h-[70%] w-[90%] rounded-md flex gap-x-3 bg-white border-2 border-gray-300 shadow-md">
+                            <div class="ml-4 mt-4 w-[30%]">
+                                <div class="rounded-md w-[100%] h-[60%] bg-center bg-cover p-5 bg-no-repeat" style="background-image: url(./image/swip_img_1.webp);"></div>
+                                <div class=" font-bold text-[13px] h-[40%]  flex items-center">₹388.50</div>
+                            </div>
+                            <div class=" w-[70%]">
+                                <div class=" h-[60%] flex flex-col justify-start items-start ">
+                                    <p class=" mt-4  h-6 w-6 bg-no-repeat" style="background-image: url(./image/veg.svg);"></p>
+                                    <p class="font-bold text-sm">Tall Java Chip Frappuccino</p>
+                                    <p class="text-[8px] text-gray-800">TALL(). </p>
+                                </div>
+                                <div class="h-[40%] mr-4 flex justify-end items-center">
+                                    <div class="font-bold text-sm bg-[#427a6b] h-6 flex justify-center items-center w-fit p-4 rounded-full text-white hover:bg-[#204138]" >Add item</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="h-[500px] bg-[#EDEBE9] mt-10">
+       
+        <div class="  ml-24 mr-24 flex justify-between" >
+            <p class="mt-6 font-bold text-2xl text-[#1E3932]">Learn more about the world of coffee!</p>
+            <p class="mt-4 text-green-800 font-bold text-sm">Discover More</p>
+        </div>
+       
+        <div class=" mt-8 ml-24 mr-24 h-96 rounded-md bg-center bg-cover bg-no-repeat flex flex-col justify-between" style="background-image: url(./image/coffee.jpg)" ">
+
+            <div>
+                <p class="border-2 rounded-md w-fit h-fit mt-4 ml-8  p-1 text-[12px] bg-[#EDEBE9] text-green-600">cofee culture</p>
+            </div>
+            <div class="mb-8 flex flex-col gap-y-10" >
+                <div class="flex flex-col gap-y-3">
+                    <p class=" ml-8 text-3xl text-white font-bold" >Art & Science Of Coffee Brewing</p>
+                    <p class=" ml-8 text-sm text-white " > Master the perfect brew with Starbucks! Learn the art and science of coffee brewing. </p>
+                </div>
+                <div>
+                    <p class="ml-8 h-9 w-48  flex justify-center items-center bg-white rounded-full">Learn More</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="h-[900px] flex flex-col  bg-[#0E382C] mt-10">
+        <div class="flex">
+            <div class=" ml-24 mt-40 "><img src="./image/logo.png" alt=""></div>
+            <div class="ml-24 mr-24 mt-40 flex  text-white gap-x-20 " >
+                 <div class=" flex flex-col gap-y-7 text-sm">
+                    <p class="font-bold text-lg">About Us</p>
+                    <p>Our Heritage</p>
+                    <p>Coffeehouse</p>
+                    <p> Our Company</p>
+                </div>
+                <div  class=" text-wrap w-32 flex flex-col gap-y-7 text-sm">
+                    <p  class="font-bold text-lg">Responsibility</p>
+                    <p>Diversity</p>
+                    <p>Community</p>
+                    <p>Ethical Sourcing</p>
+                    <p> Environmental Stewardship</p>
+                    <p> Learn More</p>
+                </div>
+    
+                <div class=" text-wrap w-40 flex flex-col gap-y-7 text-sm" >
+                    <p  class="font-bold text-lg" >Quick Links</p>
+                    <p>Privacy Policy</p>
+                    <p>FAQs</p>
+                    <p>Starbucks India Mobile App Terms of Use</p>
+                    <p>Customer Service</p>
+                    <p>Delivery</p>
+                    <p>Season's Gifting</p>
+                    <p>Offer for Beverage Subscription at Starbucks.</p>
+                    <p>Loyalty Program Terms and Conditions</p>
+                    <p>Starbucks Rewards Day Offer</p>
+                    <p>Beverage Subscription</p>
+                </div>
+                <div class=" flex gap-x-8">
+                    <div class=" text-wrap w-36">
+                        <p  class="font-bold text-lg">SOCIAL MEDIA</p>
+                        <div class="flex justify-evenly mt-4">
+                            <img class="h-7 w-7" src="./image/instagram-brands-solid.svg" alt="">
+                            <img class="h-7 w-7" src="./image/facebook-f-brands-solid.svg" alt="">
+                            <img  class="h-7 w-7" src="./image/twitter-brands-solid.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-wrap w-40 flex flex-col">
+                        <img class="h-12 w-40" src="./image/appstoreiOS.png" alt="">
+                        <img class="h-12 w-40" src="./image/appstoreAndroid.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ml-24 w-[85%]  mt-12">
+            <hr>
+        </div>
+
+        <div class=" ml-24  w-[85%] h-20  ">
+            <div class=" flex justify-between items-center text-[13px]  text-white h-[100%]">
+                <span class="flex gap-x-8 ">
+                    <p>Web Accessiblity</p>
+                    <p>Privacy Statement</p>
+                    <p>Terms of Use</p>
+                    <p>Contact Us</p>
+                </span>
+                <p class="text-[10px]">© 2024 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+    
+
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+
+
+</body>
+</html>
